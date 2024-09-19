@@ -48,3 +48,9 @@ zipkin:
       memory: 300Mi
   enabled: false
   url: zipkin.zipkin.svc.cluster.local
+
+hpa:
+  minReplicas: 1
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 70
